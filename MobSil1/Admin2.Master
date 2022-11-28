@@ -1,0 +1,124 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin2.master.cs" Inherits="MobSil1.Admin2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+     <link href="footer.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" >
+   
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <h1>    burası NAVBAR veya HEADER alanın</h1>
+        <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">MOBSİL</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="anasayfa2.aspx">Page 1-1</a></li>
+          <li><a href="teknoloji2.aspx">Page 1-2</a></li>
+          <li><a href="#">Page 1-3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+
+
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+
+        <h1>    burası FOOTER alanı</h1>
+
+         <footer class="footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="footer-col">
+                        <h4>Neden Mobile ?</h4>
+                        <ul>
+                            <li><a href="index.html">Mobile giriş</a></li>
+                            <li><a href="about.html">Neden Mobil?</a></li>
+                            <li><a href="contact.html">Java mı?</a></li>
+                            <li><a href="contact.html">Kotlin mi?</a></li>
+
+                        </ul>
+                    </div>
+
+
+                    <div class="footer-col">
+                        <h4>Neden Yazılım ?</h4>
+                        <ul>
+                            <li><a href="index.html">Programlama nedir?</a></li>
+                            <li><a href="about.html">Yazılım Nedir?</a></li>
+                            <li><a href="contact.html">Nerden başlanmalı?</a></li>
+                            <li><a href="contact.html">İş Dünyası</a></li>
+
+                        </ul>
+                    </div>
+
+
+                    <div class="footer-col">
+                        <h4>hakkımızda </h4>
+                        <ul>
+                            <li><a href="index.html">Biz Kimiz?</a></li>
+                            <li><a href="about.html">Faaliyetlerimiz</a></li>
+                            <li><a href="contact.html">Projelerimiz</a></li>
+                            <li><a href="contact.html">Referanslarımız</a></li>
+
+                        </ul>
+                    </div>
+
+
+
+                    <div class="footer-col">
+                        <h4>Sosya Medya </h4>
+                        <div class="social-links">
+
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </footer>
+    </form>
+</body>
+</html>
